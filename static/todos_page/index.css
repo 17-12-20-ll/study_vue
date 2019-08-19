@@ -107,7 +107,7 @@ li:before {
 }
 
 li:last-child {
-  border-bottom: none;
+  border-bottom: none;.btn-danger
 }
 
 /*footer*/
