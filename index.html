@@ -3,9 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
   <link rel="stylesheet" href="./static/css/bootstrap.css"/>
   <title>哼</title>
+  <!--移动端的问题，延迟，下列代表引入一个库，实现快速点击-->
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <script>
+      if ('addEventListener' in document) {
+          document.addEventListener('DOMContentLoaded', function () {
+              FastClick.attach(document.body);
+          }, false);
+      }
+      if (!window.Promise) {
+          document.writeln('<script src = "https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js" ' + ' > ' + ' < ' + ' / ' + ' script > ');
+      }
+  </script>
 </head>
 
 <body>
